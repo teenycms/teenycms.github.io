@@ -102,6 +102,9 @@ p { margin: 0 0 1em; }
 .inside { margin-top: 40px; }
 .inside h3 { font-size: 22px; margin: 0 0 4px; }
 .inside__hint { margin: 0 0 16px; font-size: 14px; color: var(--muted); }
+.inside__try { margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; padding: 16px 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+.inside__try p { margin: 0; flex: 1 1 280px; color: var(--ink-2); font-size: 15px; }
+.inside__try .btn { flex: 0 0 auto; }
 .thumbs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
 .thumb { display: block; text-decoration: none; color: var(--ink-2); font-size: 13px; }
 .thumb img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); transition: transform .15s ease, box-shadow .15s ease; }
