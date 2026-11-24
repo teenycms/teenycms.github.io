@@ -148,7 +148,20 @@
         <li class="card"><span class="steps__n" aria-hidden="true">3</span><h3>Save your rescue code</h3><p>Choose a look, create your account and keep the rescue code it shows. Then start editing.</p></li>
       </ol>
       <p class="note">You need PHP 8.1 or newer with the <code>json</code> and <code>dom</code> extensions, on Apache, LiteSpeed, IIS or nginx. Step-by-step help is in the <a href="https://github.com/webzing/teeny/wiki/Installation">installation guide</a>.</p>
-      <p class="note">Just want to look around first? <a href="https://codespaces.new/webzing/teeny?quickstart=1">Try it in your browser</a> with GitHub Codespaces (free GitHub account), or run <code>php -S localhost:8000 router.php</code> in the Teeny folder on your computer.</p>
+      <div class="try" id="try">
+        <h3>Or try it in your browser first</h3>
+        <p class="try__lead">GitHub Codespaces gives you a private copy of Teeny that runs online, with nothing to install. You need a free GitHub account.</p>
+        <ol class="grid grid--3 steps">
+          <li class="card"><span class="steps__n" aria-hidden="true">1</span><h3>Create a Codespace</h3><p>Open the <a href="https://codespaces.new/webzing/teeny?quickstart=1">Codespaces link</a> and click <strong>Create codespace</strong>. VS Code opens in your browser after about a minute.</p></li>
+          <li class="card"><span class="steps__n" aria-hidden="true">2</span><h3>Trust the folder</h3><p>Click <strong>Trust Folder &amp; Continue</strong>. Teeny opens in a new tab. If it doesn't, click <strong>Ports</strong> at the bottom and the globe icon next to Teeny CMS.</p></li>
+          <li class="card"><span class="steps__n" aria-hidden="true">3</span><h3>Install and explore</h3><p>Set up your test site and start editing. When you're done, delete the Codespace at <a href="https://github.com/codespaces">github.com/codespaces</a>.</p></li>
+        </ol>
+        <div class="actions">
+          <a class="btn btn--primary" href="https://codespaces.new/webzing/teeny?quickstart=1">Try it in your browser</a>
+          <a class="btn btn--ghost" href="https://github.com/webzing/teeny/wiki/Try-it-in-your-browser">Full steps and tips</a>
+        </div>
+        <p class="note">Prefer your own computer? Run <code>php -S localhost:8000 router.php</code> in the Teeny folder, then visit <code>localhost:8000</code>.</p>
+      </div>
     </div>
   </section>
 
