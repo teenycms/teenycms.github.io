@@ -64,8 +64,9 @@
     <div class="wrap">
       <figure class="shot">
         <div class="shot__bar" aria-hidden="true"><i></i><i></i><i></i></div>
-        <img src="assets/studio.png" width="2880" height="1800" alt="The Teeny Studio home screen: a greeting, a preview of the live site, counts of pages, images, messages and team members, recently edited pages and shortcuts.">
+        <video class="demo" src="assets/demo.mp4" poster="assets/demo-poster.jpg" width="1280" height="800" muted loop playsinline controls preload="metadata" aria-describedby="demo-cap"></video>
       </figure>
+      <p class="shot__cap" id="demo-cap">A one-minute tour: create a page, click the text to edit it, add a section, save, and open the plain file it's stored in.</p>
     </div>
   </section>
 
@@ -205,6 +206,20 @@
 <div class="viewer" id="view-vault" role="dialog" aria-label="Vault screenshot"><a class="viewer__bg" href="#inside" tabindex="-1" aria-hidden="true"></a><figure class="viewer__box"><img src="assets/screens/vault.jpg" width="1920" height="1200" loading="lazy" alt="Teeny Studio: Vault screen. Download a copy of your site, or bring one back."><figcaption><strong>Vault.</strong> Download a copy of your site, or bring one back.</figcaption></figure><a class="viewer__close" href="#inside" aria-label="Close">×</a></div>
 
 <script>
+  // The demo video plays (muted) only while it's on screen, and never for people who prefer reduced motion.
+  (function () {
+    var v = document.querySelector('video.demo');
+    if (!v || !('IntersectionObserver' in window)) return;
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var userPaused = false;
+    v.addEventListener('pause', function () { if (!v.dataset.auto) userPaused = true; delete v.dataset.auto; });
+    new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting && !userPaused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        else if (!e.isIntersecting && !v.paused) { v.dataset.auto = '1'; v.pause(); }
+      });
+    }, { threshold: 0.4 }).observe(v);
+  })();
   // Escape closes a screenshot (the viewer itself works without JavaScript)
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && location.hash.indexOf('#view-') === 0) location.hash = 'inside';
