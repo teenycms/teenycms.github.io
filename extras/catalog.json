@@ -1,0 +1,149 @@
+{
+    "latest": {
+        "version": "1.6.0"
+    },
+    "themes": [
+        {
+            "id": "bio",
+            "name": "Bio",
+            "description": "Link-in-bio: a narrow centred column, round photo and big tappable links",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/theme-bio.zip",
+            "sha256": "501a9f46797b1c2532cb227f67509d99d37440a78ce837be812274f44744710a",
+            "colors": {
+                "bg": "#fbf4ef",
+                "text": "#2b2230",
+                "accent": "#d94f75",
+                "surface": "#ffffff"
+            }
+        },
+        {
+            "id": "handbook",
+            "name": "Handbook",
+            "description": "Documentation and knowledge bases: clear headings, readable code and a table of contents",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/theme-handbook.zip",
+            "sha256": "2d2bc54bf0999e182b8d835ab5056da5347a8710b5dabb48eed9a31d7d0ba8fc",
+            "colors": {
+                "bg": "#ffffff",
+                "text": "#1b2430",
+                "accent": "#2563eb",
+                "surface": "#f5f7fa"
+            }
+        },
+        {
+            "id": "launch",
+            "name": "Launch",
+            "description": "Landing pages: a big hero, strong buttons and bold sections that convert",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/theme-launch.zip",
+            "sha256": "1a95af1d769ed6151c01f463eac88efcafc476fd8a4c5938ca0239e090f07ef9",
+            "colors": {
+                "bg": "#ffffff",
+                "text": "#14112b",
+                "accent": "#6a45ff",
+                "surface": "#f4f2ff"
+            }
+        },
+        {
+            "id": "paper",
+            "name": "Paper",
+            "description": "Editorial and newspaper-like with serif headings. Made to pair with News",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/theme-paper.zip",
+            "sha256": "805ae10b9671349f0307fdcc1abd8b7753c0a910db788000d9698e8658648e13",
+            "colors": {
+                "bg": "#fbf9f4",
+                "text": "#1a1917",
+                "accent": "#b02a1f",
+                "surface": "#f1ede3"
+            }
+        },
+        {
+            "id": "soft",
+            "name": "Soft",
+            "description": "Friendly rounded shapes and gentle colours, for cafés, shops and small businesses",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/theme-soft.zip",
+            "sha256": "91087a27f6bf99a24b9d9c3c234cb5edc633a08d02b8b1154272700b62475207",
+            "colors": {
+                "bg": "#fff8f1",
+                "text": "#3a2e2a",
+                "accent": "#df7356",
+                "surface": "#fdecdc"
+            }
+        },
+        {
+            "id": "studio",
+            "name": "Studio",
+            "description": "Bold, large type and lots of white space, for portfolios",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/theme-studio.zip",
+            "sha256": "66204f883922cfba63559cbeec75f7d3e38d4c29285aefab060a10067cd69516",
+            "colors": {
+                "bg": "#ffffff",
+                "text": "#0c0c0c",
+                "accent": "#0c0c0c",
+                "surface": "#f3f3f1"
+            }
+        }
+    ],
+    "plugins": [
+        {
+            "id": "contact-buttons",
+            "name": "Contact buttons",
+            "description": "WhatsApp, call and email buttons in one tidy row, easy to tap on phones.",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/plugin-contact-buttons.zip",
+            "sha256": "272d680c008a76347a8cec4d384817f876a7df3f75b7be22d678f7ad8ef43c1f",
+            "tag": ""
+        },
+        {
+            "id": "image-slider",
+            "name": "Image slider",
+            "description": "Swipeable photos with arrows and dots. Interactive, and runs in a secure sandbox.",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/plugin-image-slider.zip",
+            "sha256": "4f93ec51233bdc1f7f2579e313176c0f7df9d8c26de0b4cc147ba118ac128b00",
+            "tag": "interactive"
+        },
+        {
+            "id": "location-card",
+            "name": "Location card",
+            "description": "Your address, opening times and an \"Open in Maps\" button. No embedded map, so no trackers.",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/plugin-location-card.zip",
+            "sha256": "d38e3fa15a5035a9169e5068aa9527c2df74b48c59b5aa7d1903f1ba8b8c0e3f",
+            "tag": ""
+        },
+        {
+            "id": "price-list",
+            "name": "Menu or price list",
+            "description": "Dishes, drinks or services with descriptions, prices and little tags like \"Vegan\" or \"New\".",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/plugin-price-list.zip",
+            "sha256": "90bf9aa1224a75f30022a37323c7c16f4e67e0ba6204543f06053b7db4187dc5",
+            "tag": ""
+        },
+        {
+            "id": "timeline",
+            "name": "Timeline",
+            "description": "Milestones or your story, from the first day to today.",
+            "version": "1.0",
+            "minTeeny": "1.6.0",
+            "zip": "https://teenycms.github.io/extras/plugin-timeline.zip",
+            "sha256": "7a459eeb06bc535044449c6d2e1f8a311da6058fb228359f2a8b529fef69a8e3",
+            "tag": ""
+        }
+    ]
+}
